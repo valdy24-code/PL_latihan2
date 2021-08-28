@@ -25,30 +25,3 @@
 </table>
 <br>
 <input type='button' onclick=location.href='InsertMahasiswa.php' value='Tambah Data' />
-
-<!DOCTYPE html>
-<html>
-<body>
-<table width="100%" height="100%" border="1">
-    <tr height="5%">
-        <td align="center">
-            <a href="index.php?id=<?php echo base64_encode(1); ?>">Mahasiswa</a>
-            <a href="index.php?id=<?php echo base64_encode(2); ?>">Dosen</a>
-            <a href="index.php?id=<?php echo base64_encode(3); ?>">Matakuliah</a>
-            <a href="index.php?id=<?php echo base64_encode(4); ?>">Nilai</a>
-        </td>
-    </tr>
-    <tr height="95%">
-        <td valign="top" align="center">
-            <?php
-                $npm =base64_decode($_GET["id"]);
-                if($id==1)
-                {
-                    include('mahasiswa.php');
-                }
-            ?>
-        </td>
-    </tr>
-</table>
-</body>
-</html>
